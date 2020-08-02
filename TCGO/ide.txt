@@ -1,0 +1,99 @@
+Database:
+
+- DeckShop
+  - DeckId
+  - Price
+
+- DeckUser
+  - DeckId
+  - UserId
+
+- Deck
+  - Id
+  - Name
+  - Description
+  - Image
+
+- DeckDetail
+  - DeckId
+  - CardId
+  - Quantity
+
+- Card
+  - Id
+  - Name
+  - TypeId
+  - HP
+  - Image
+  - Stage
+  - Element
+  - Rarity(Common, Medium, Rare, Myth)
+
+- CardDetail
+  - UserId
+  - CardId
+  - Quantity
+
+- User
+  - Id
+  - ScreenName
+  - Money
+  - Username
+  - Password
+  - DOB
+  - Email
+
+- Pack
+  - Id
+  - Name
+  - Description
+  - Price
+
+- PackDetail
+  - PackId
+  - CardId
+  - Quantity
+
+
+Forms
+
+Login Form
+- Username Label & Textbox
+- Password Label & Textbox
+- Login Button and Register Button
+* Login by pressing enter on both textbox
+
+Register Form
+- Register user with screenname, username, email, password
+
+Loading Form
+- Progress Bar (Loading data from the server. Please wait.)
+
+MainForm
+- Menubar
+  - Manage Profile
+  - Manage Deck
+  - Challenge for pack
+
+- Term and Use Form
+  - Scroll pane
+  - Agree Button
+
+- Deck Manager Form
+  - Add, edit, delete deck
+  - See card collection
+  - Max jumlah 60 card
+  - View option: stack, table(qty, name, type, stage, hp), grid
+
+Shop Form
+- See and buy packs and decks
+
+Manage Profile Form
+- Update profile screenname etc
+
+Top Up Form
+- Top up money
+
+Challenge for pack
+- Choose deck and opponent to challenge, then calculates winning formula.
+- If won, will get a free basic pack added automatically to collections
